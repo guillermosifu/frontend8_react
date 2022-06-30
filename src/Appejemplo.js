@@ -26,7 +26,6 @@ return(
 <h3>hola grupo 8</h3>
 <button onClick= {sumar}>sumar</button>
 <button onClick={restar}>restar</button>
-
  </div>
    
 

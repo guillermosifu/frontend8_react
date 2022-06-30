@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import logo2 from './tony-stark.jpg'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo2} className="App-logo" alt="logo"/>
         <p>
           GUILLERMO SIFUENTES MONTOYA
         </p>
@@ -16,7 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           GRUPO 8 EL MEJOR
-        </a>
+        </a>        
       </header>
     </div>
   );

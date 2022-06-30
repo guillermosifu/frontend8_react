@@ -4,13 +4,26 @@
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
+  border-radius: 50%;
+  border: solid 4px red;
+  cursor: pointer;
+  transition: all 500ms ease-out;
 }
 
-.footer{
-  color: red;
-  display: flex;
-  justify-content: space-around;
+.App-logo:hover {
+  box-shadow: 2px 5px 10px 4px red;
+  
+  
+}
+
+footer{
+    background-color: #1c2331;
+}
+
+hr{
+  width: 80px;
+  height: 2px;
+  background-color: #7c4dff;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
