@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './componentes/Header';
 import App from './App';
-import FormRegister from './componentes/Form'; 
+
+import FormUser from './componentes/FormUser';
 import Footer from './componentes/Footer';
-import Primercomponente from './Appejemplo';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +14,7 @@ root.render(
   <React.StrictMode>
    <Header/>       
     <App />
-    <FormRegister/>
+   <FormUser/>
     <Footer/>        
      </React.StrictMode>
 );

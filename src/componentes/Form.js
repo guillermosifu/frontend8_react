@@ -25,9 +25,9 @@ const handleInputLastName = (e) => setApellido(e.target.value);
 return(
 <div>
     <form>
-        <h4>Formulario de registro</h4>
+        <h4>Formulario de registro {apellido}</h4>
         <h4>Nombre {nombre}</h4>
-        <h4>Apellido {apellido} </h4>
+        <h4>Apellido  </h4>
         <p>
             <input
             type="text"
