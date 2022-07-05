@@ -1,21 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Header from './componentes/Header';
-import App from './App';
-
-import FormUser from './componentes/FormUser';
-import Footer from './componentes/Footer';
+import Footer from "./componentes/Footer"
+import Router from './router';
 
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <Header/>       
-    <App />
-   <FormUser/>
-    <Footer/>        
+    <Router/>                
+    <Footer/>
      </React.StrictMode>
 );
 
