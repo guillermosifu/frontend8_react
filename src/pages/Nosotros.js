@@ -1,6 +1,6 @@
-import App from "../Apppractica"
-import {Container} from "@mui/material"
 
+import {Container} from "@mui/material"
+import App from "../Apppractica"
 
 const Nosotros =()=>{
     return(
@@ -8,7 +8,7 @@ const Nosotros =()=>{
         <h1>
             PAGINA DE NOSOTROS
         </h1>
-        <App/>
+       <App/>
     </Container>)
 };
 

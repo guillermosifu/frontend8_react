@@ -16,7 +16,7 @@ const Header =()=>{
               <Link className="nav-link active" aria-current="page" to="nosotros">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="form">Link</a>
+              <Link className="nav-link" to="form">Link</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="form" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
