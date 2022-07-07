@@ -1,5 +1,7 @@
 import { Container, Card, CardContent, CardMedia, Grid } from "@mui/material";
 import{useEffect, useState} from "react";
+
+import PokemonDetail from "../componentes/PokemonDetail/index"
 import{getDataFromPokemon} from "../service/index"
 
 
@@ -42,18 +44,27 @@ useEffect(()=>{
     <h1>
         pokedex grupo 8
     </h1>
-    <Grid container spacing ={3}>
-   {pokemons.length > 0 &&
-   pokemons.map((pokemon,index)=>
-   <Grid item>
-   <Card sx={{width : 200}}>
-    <CardMedia component ="img" image={`${imgUrl}${index + 1}.svg`}/>
-    <CardContent/>
-    <h4>{pokemon.name}</h4>
-   </Card>
-   </Grid>
-   )}
-   </Grid>
+    <Grid container spacing={3}>
+        {pokemons.length > 0 &&
+          pokemons.map((pokemon, index) => (
+            // aca el codigo visual
+            <Grid item md={4} lg={4} sm={12} xs={12}>
+              <Card className="card-pokemon">
+                <CardMedia
+                  component="img"
+                  className="img-pokemon"
+                  image={`${imgUrl}${index + 1}.svg`}
+                />
+                <CardContent className="center">
+                  <h3 className="name-pokemon">{pokemon.name}</h3>
+                 
+                  {/* vamos a pasarle el nombre como atributo*/}
+                  <PokemonDetail nombre={pokemon.name} url={pokemon.url} />
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+      </Grid>
 </Container>
     );
 };
