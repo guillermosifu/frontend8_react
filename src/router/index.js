@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route , Link } from "react-router-dom";
 import Header from "../componentes/Header";
 import Form from "../componentes/Form"
 import Nosotros from "../pages/Nosotros";
-import Home from "../pages/Home";
+import Pokemon from "../pages/Pokemon";
 
 const Router = () => {
     // como esto es un componente tenemos que usar return para poder crear las rutas
@@ -10,7 +10,7 @@ const Router = () => {
       <BrowserRouter>  
       <Header/>
       <Routes>
-       <Route path="/" element ={<Home/>}/>      
+       <Route path="/" element ={<Pokemon/>}/>      
       </Routes>  
       <Routes>            
        <Route path="/form" element ={<Form/>}/>      

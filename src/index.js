@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Footer from "./componentes/Footer"
+
 import Router from './router';
 
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router/>              
-   <Footer/>
+
      </React.StrictMode>
 );
 
