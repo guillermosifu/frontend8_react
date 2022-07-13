@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "../componentes/Header";
-
+import App from "../Apppractica"
 import Nosotros from "../pages/Nosotros";
 import Pokemon from "../pages/Pokemon";
 import Flags from "../pages/Flags"
@@ -15,13 +15,13 @@ const Router = () => {
        <Route path="/flags" element ={<Flags/>}/>      
       </Routes> 
       <Routes>
-       <Route path="/" element ={<Pokemon/>}/>      
+       <Route path="pokemon" element ={<Pokemon/>}/>      
       </Routes>        
       <Routes>
        <Route path="header" element ={<Header/>}/>      
       </Routes>  
       <Routes>
-       <Route path="nosotros" element ={<Nosotros/>}/>      
+       <Route path="/" element ={<App/>}/>      
       </Routes>     
                     
       </BrowserRouter>
