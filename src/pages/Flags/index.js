@@ -73,7 +73,7 @@ const Flags = () => {
       <Grid container spacing={3} mt={5}>
         <Grid item md={6}>
           <TextField
-           onChange={handleSearchCountry}
+            onChange={handleSearchCountry}
             label="Search for a country..."
             fullWidth
           />
@@ -85,7 +85,6 @@ const Flags = () => {
               label="Filter by Region"
               value={region}
               onChange={handleRegion}
-             
             >
               <MenuItem value="all">Todas las regiones</MenuItem>
               <MenuItem value="Africa">Africa</MenuItem>
