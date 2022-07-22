@@ -1,18 +1,18 @@
-
-
-import { createContext,useState } from "react";
-
+import{createContext, useState} from"react"
 export const UserContext = createContext();
 
-// provider siempre va a bahar con usecontext
+export const UserProvider =(props) =>{
+   
+    const [user,setUser] = useState(JSON.parse(localStorage.getItem("user")));
 
-export const UserProvider =(props)=>{
-    const[user,setUser] = useState({
-        name:"guillermo",
-        last_name:"sifuentes",
-    })
-    return (
-        <UserContext.Provider value={{user,setUser}}>
+    const storeUser =(dataUser)=>{
+        localStorage.setItem("user", JSON.stringify(dataUser))
+        setUser(dataUser)
+    }
+
+
+    return(
+        <UserContext.Provider value={{user,storeUser}}>
             {props.children}
         </UserContext.Provider>
     )
