@@ -3,6 +3,7 @@ import { useContext ,useState } from "react"
 import logoregister from "../../assets/logoregister.jpg"
 import{UserContext} from "../../context/userContext"
 import swal from "sweetalert"
+import { Outlet } from "react-router-dom"
 
 
 const Login =()=>{
@@ -40,7 +41,7 @@ const handleClickLogin=()=>{
     }
 }
 
-    return(
+    return( 
        <Grid
        container
        alignItems="center"
@@ -81,11 +82,11 @@ const handleClickLogin=()=>{
                        >
                             Inicia Sesion
                         </Button>
-                    </Grid>
+                      </Grid>
                 </CardContent>
             </Card>
         </Grid>
-        
+      
 
        </Grid>
     )

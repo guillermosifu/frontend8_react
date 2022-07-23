@@ -5,6 +5,8 @@ import Pokemon from "../pages/Pokemon";
 import Flags from "../pages/Flags"
 import Detail from "../pages/Detail/index"
 import Login from "../pages/Login/index"
+import FormUser from "../componentes/FormUser"
+import Private from "../private/index"
 
 
 
@@ -16,13 +18,20 @@ const Router = () => {
       <Header/>      
       <Routes>            
        <Route path="/flags" element ={<Flags/>}/> 
-       <Route path="/flags/detail/:name" element={<Detail/>}/>   
-                
-       <Route path="header" element ={<Header/>}/>      
-       <Route path="pokemon" element ={<Pokemon/>}/>
+       <Route path="/formulario" element ={<FormUser/>}/> 
+       <Route path="/flags/detail/:name" element={<Detail/>}/> 
     
-       <Route path="/" element ={<Login/>}/>   
+       <Route path="header" element ={<Header/>}/>     
+       <Route path="/" element ={<Login/>}/> 
+
+       <Route element ={<Private/>}>
+        <Route path="pokemon" element={<Pokemon/>}/>
+        
+       </Route>
+   
+   
      
+
       </Routes>  
                          
       </BrowserRouter>
